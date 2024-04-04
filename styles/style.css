@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.container header .menu {
+  display: none;
+}
+.container header .navlist {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.container header .navlist a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  transition: 0.4s;
+}
+.container header .navlist a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.container main {
+  display: flex;
+  gap: 2rem;
+}
+.container main .main-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container main .main-content div img {
+  width: 100%;
+}
+.container main .main-content div div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.container main .main-content div div h1 {
+  font-size: 3rem;
+  color: hsl(240, 100%, 5%);
+}
+.container main .main-content div div div {
+  display: flex;
+  flex-direction: column;
+}
+.container main .main-content div div div p {
+  width: 380px;
+  color: hsl(236, 13%, 42%);
+}
+.container main .main-content div div div button {
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  width: 150px;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.container main .main-content div div div button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+.container main .news-content {
+  background-color: hsl(240, 100%, 5%);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,95 @@
+$Softorange: hsl(35, 77%, 62%);
+$Softred: hsl(5, 85%, 63%);
+$Off-white: hsl(36, 100%, 99%);
+$Grayishblue: hsl(233, 8%, 79%);
+$Darkgrayishblue: hsl(236, 13%, 42%);
+$Verydarkblue: hsl(240, 100%, 5%);
+
+@font-face {
+    font-family: 'Inter',sans-serif;
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter,sans-serif;
+}
+body, html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        .menu{
+            display: none;
+        }
+        .navlist{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $Darkgrayishblue;
+                transition: .4s;
+                &:hover{
+                    color: $Softred;
+                }
+            }
+        }
+    }
+    main{
+        display: flex;
+        gap: 2rem;
+        .main-content{
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                img{
+                    width: 100%;
+                }
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2rem;
+                    h1{
+                        font-size: 3rem;
+                        color: $Verydarkblue;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        p{
+                            width: 380px;
+                            color: $Darkgrayishblue;
+                        }
+                        button{
+                            border: none;
+                            background-color: $Softred;
+                            color: $Off-white;
+                            font-weight: 700;
+                            letter-spacing: .2rem;
+                            width: 150px;
+                            padding: 1rem 0;
+                            cursor: pointer;
+                            transition: .4s;
+                            &:hover{
+                                background-color: $Verydarkblue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .news-content{
+            background-color: $Verydarkblue;
+        }
+    }
+}
