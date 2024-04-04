@@ -89,7 +89,59 @@ body, html{
             }
         }
         .news-content{
+            padding: 0 1rem;
             background-color: $Verydarkblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            h1{
+                color: $Softorange;
+                font-size: 2.5rem;
+            }
+            div{
+                max-width: 600px;
+                h2{
+                    color: $Off-white;
+                    font-size: 1.5rem;
+                    padding-bottom: 1rem;
+                    cursor: pointer;
+                    transition: .4s;
+                    &:hover{
+                        color: $Softorange;
+                    }
+                }
+                p{
+                    color: $Grayishblue;
+                }
+            }
+        }
+    }
+    .articles-content{
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        article{
+            width: 33%;
+            img{
+                float: left;
+                width: 100px;
+                margin-right: 1rem;
+            }
+            span{
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: $Grayishblue;
+            }
+            h1{
+                color: $Verydarkblue;
+                padding: .5rem 0;
+                cursor: pointer;
+                transition: .4s;
+                &:hover{
+                    color: $Softred;
+                }
+            }
         }
     }
 }
