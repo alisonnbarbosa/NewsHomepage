@@ -27,6 +27,9 @@ body, html {
 .container header .menu {
   display: none;
 }
+.container header .menu-close {
+  display: none;
+}
 .container header .navlist {
   display: flex;
   gap: 2rem;
@@ -60,13 +63,14 @@ body, html {
 .container main .main-content div div h1 {
   font-size: 3rem;
   color: hsl(240, 100%, 5%);
+  width: 300px;
 }
 .container main .main-content div div div {
   display: flex;
   flex-direction: column;
 }
 .container main .main-content div div div p {
-  width: 380px;
+  max-width: 380px;
   color: hsl(236, 13%, 42%);
 }
 .container main .main-content div div div button {
@@ -137,4 +141,82 @@ body, html {
 }
 .container .articles-content article h1:hover {
   color: hsl(5, 85%, 63%);
+}
+
+@media (width <= 1030px) {
+  body {
+    overflow-x: hidden;
+    margin: 0 1rem;
+  }
+  .container {
+    max-width: 700px;
+  }
+  .container header .menu {
+    display: block;
+    cursor: pointer;
+  }
+  .container header .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: hsl(36, 100%, 99%);
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.4s;
+  }
+  .container header .navbar .menu-close {
+    display: block;
+    width: 35px;
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .container header .navbar .navlist {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+  .container header .navbar .navlist a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+  }
+  .container main {
+    flex-direction: column;
+  }
+  .container main .main-content div div {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .container main .main-content div div h1 {
+    width: 100%;
+  }
+  .container main .main-content div div div p {
+    min-width: 100%;
+    font-size: 1.2rem;
+  }
+  .container main .main-content div div div button {
+    width: 300px;
+  }
+  .container main .news-content {
+    height: 600px;
+  }
+  .container .articles-content {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+  .container .articles-content article {
+    display: flex;
+    align-items: center;
+  }
+  .container .articles-content article img {
+    width: 120px;
+  }
+  .container .articles-content article div p {
+    width: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */

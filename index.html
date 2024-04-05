@@ -14,6 +14,7 @@
             <img src="assets/images/logo.svg" alt="logo" class="logo">
             <nav class="navbar">
                 <ul class="navlist">
+                    <img src="assets/images/icon-menu-close.svg" alt="menu" class="menu-close">
                     <li><a href="#">Página inicial</a></li>
                     <li><a href="#">Novo</a></li>
                     <li><a href="#">Popular</a></li>
@@ -26,7 +27,10 @@
         <main>
             <section class="main-content">
                 <div>
-                    <img src="assets/images/image-web-3-desktop.jpg" alt="img" class="img-main">
+                    <picture>
+                        <source media="(min-width: 1031px)" srcset="assets/images/image-web-3-desktop.jpg" class="img-main">
+                        <img src="assets/images/image-web-3-mobile.jpg" alt="img" class="img-main">
+                    </picture>
                     <div>
                         <h1>O Brilhante Futuro da Web 3.0?</h1>
                         <div>
@@ -60,21 +64,27 @@
         <aside class="articles-content">
             <article>
                 <img src="assets/images/image-retro-pcs.jpg" alt="img">
-                <span>01</span>
-                <h1>Revivendo PCs Retrô</h1>
-                <p>O que acontece quando os PCs antigos recebem atualizações modernas?</p>
+                <div>
+                    <span>01</span>
+                    <h1>Revivendo PCs Retrô</h1>
+                    <p>O que acontece quando os PCs antigos recebem atualizações modernas?</p>
+                </div>
             </article>
             <article>
                 <img src="assets/images/image-top-laptops.jpg" alt="img">
-                <span>02</span>
-                <h1>Top 10 Laptops de 2022</h1>
-                <p>Nossas melhores escolhas para várias necessidades e orçamentos.</p>
+                <div>
+                    <span>02</span>
+                    <h1>Top 10 Laptops de 2022</h1>
+                    <p>Nossas melhores escolhas para várias necessidades e orçamentos.</p>
+                </div>
             </article>
             <article>
                 <img src="assets/images/image-gaming-growth.jpg" alt="img">
-                <span>03</span>
-                <h1>O Crescimento dos Jogos Eletrônicos</h1>
-                <o>Como a pandemia despertou novas oportunidades.</o>
+                <div>
+                    <span>03</span>
+                    <h1>O Crescimento dos Jogos Eletrônicos</h1>
+                    <p>Como a pandemia despertou novas oportunidades.</p>
+                </div>
             </article>
         </aside>
     </div>

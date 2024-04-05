@@ -30,6 +30,9 @@ body, html{
         .menu{
             display: none;
         }
+        .menu-close{
+            display: none;
+        }
         .navlist{
             display: flex;
             gap: 2rem;
@@ -62,12 +65,13 @@ body, html{
                     h1{
                         font-size: 3rem;
                         color: $Verydarkblue;
+                        width: 300px;
                     }
                     div{
                         display: flex;
                         flex-direction: column;
                         p{
-                            width: 380px;
+                            max-width: 380px;
                             color: $Darkgrayishblue;
                         }
                         button{
@@ -144,4 +148,92 @@ body, html{
             }
         }
     }
+}
+@media (width <= 1030px) {
+
+    body{
+        overflow-x: hidden;
+        margin: 0 1rem;
+    }
+    .container{
+        max-width: 700px;
+        header{
+            .menu{
+                display: block;
+                cursor: pointer;
+            }
+            .navbar{
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: $Off-white;
+                width: 60vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                transform: translateX(100%);
+                transition: .4s;
+                .menu-close{
+                    display: block;
+                    width: 35px;
+                    position: fixed;
+                    top: 2rem;
+                    right: 1rem;
+                    cursor: pointer;
+                }
+                .navlist{
+                    flex-direction: column;
+                    margin-left: 2rem;
+                    a{
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: $Verydarkblue;
+                    }
+                }
+            }
+        }
+        main{
+            flex-direction: column;
+            .main-content{
+                div{
+                    div{
+                        flex-direction: column;
+                        gap: 1rem;
+                        h1{
+                            width: 100%;
+                        }
+                        div{
+                            p{
+                                min-width: 100%;
+                                font-size: 1.2rem;
+                            }
+                            button{
+                                width: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+            .news-content{
+                height: 600px;
+            }
+        }
+        .articles-content{
+            flex-direction: column;
+            align-items: start;
+            gap: 2rem;
+            article{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 120px;
+                }
+                div{
+                    p{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }  
 }
